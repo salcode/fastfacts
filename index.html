@@ -44,45 +44,11 @@
 		</div><!-- .container -->
 
 		<script src="js/jquery.js"></script>
+		<script src="js/fastFacts.js"></script>
 
 		<script>
 			jQuery(document).ready( function($) {
-				var $mathProblems = $('#math-problems');
-				var i, j;
-				var markup = '';
-
-				function randomNumberFromMinToMaxInclusive( min, max ) {
-					return Math.floor( Math.random() * ( max - min + 1 ) ) + min;
-				}
-
-				function mathProblemMarkup( min, max ) {
-					var markup = '';
-					markup += '<div class="math-problem">'
-
-						markup += '<div class="math-problem-addend-1">';
-						markup += randomNumberFromMinToMaxInclusive( min, max );
-						markup += '</div>';
-
-						markup += '<div class="math-problem-addend-2">';
-						markup += randomNumberFromMinToMaxInclusive( min, max );
-						markup += '</div>';
-
-					markup += '</div>'
-
-					return markup;
-				}
-
-				for ( i=0; i<10; i++ ) {
-					markup += '<div class="row">';
-						for ( j=0; j<10; j++ ) {
-							markup += '<div class="col-xs-1">';
-								markup += mathProblemMarkup(0, 9);
-							markup += '</div>';
-						}
-					markup += '</div>';
-				}
-
-				$mathProblems.append( markup );
+				$('#math-problems').fastFacts();
 			});
 		</script>
 
