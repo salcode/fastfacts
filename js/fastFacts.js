@@ -10,7 +10,7 @@
 
 		var options = $.extend({
 			'min': 0,
-			'max': 10,
+			'max': 9,
 			'colClass': 'col-xs-1',
 			'rowClass': 'row',
 			'operator': '+',
