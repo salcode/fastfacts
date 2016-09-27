@@ -2,6 +2,10 @@
  * CSS for jQuery Plugin Fast Facts
  */
 
+h1 {
+	box-shadow: inset -13px 38px 0 0 white, inset -350px 0 0 -85px black;
+}
+
 .subtitle {
 	font-size: 50%;
 	vertical-align: middle;
