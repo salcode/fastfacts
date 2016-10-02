@@ -18,3 +18,16 @@
 .fast-facts-operator {
 	float: left;
 }
+
+#name{
+	top: 5px;
+	right: 5px;
+}
+
+.line{
+	border: 0;
+	outline: 0;
+	background: transparent;
+	border-bottom: 2px solid black;
+	width: 200px;
+}
