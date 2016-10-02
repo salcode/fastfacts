@@ -18,3 +18,10 @@
 .fast-facts-operator {
 	float: left;
 }
+
+#name {
+	border-bottom: 2px solid black;
+	width: 200px;
+	padding-top: 25px;
+	text-indent: -50px;
+}
