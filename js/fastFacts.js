@@ -15,7 +15,8 @@
 			'rowClass': 'row',
 			'operator': '+',
 			'numProblems': 100,
-			'allowNegativeResult': false
+			'allowNegativeResult': false,
+			'allowZeroResult': false
 		}, options );
 
 		return this.each( function() {
@@ -91,6 +92,10 @@
 		if ( '-' === options.operator && false !== otherNumber ) {
 			min = options.min;
 			max = options.allowNegativeResult ? options.max : otherNumber - 1;
+
+			if ( false === options.allowZeroResult && otherNumber === max ) {
+				max--;
+			}
 		} else {
 			min = options.min;
 			max = options.max;
