@@ -87,8 +87,13 @@
 
 	var getNumber = function( options, otherNumber = false ) {
 		var min, max;
-		min = options.min;
-		max = options.max;
+		if ( '-' === options.operator && false !== otherNumber ) {
+			min = options.min;
+			max = options.max;
+		} else {
+			min = options.min;
+			max = options.max;
+		}
 
 		return randomNumberFromMinToMaxInclusive( min, max );
 	}
