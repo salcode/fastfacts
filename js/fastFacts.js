@@ -16,7 +16,9 @@
 			'operator': '+',
 			'numProblems': 100,
 			'allowNegativeResult': false,
-			'allowZeroResult': false
+			'allowZeroResult': false,
+			'allowTwoDigitSubtractionResult': false,
+			'allowTwoDigitSubtrahend':        false // Number being subtracted no greater than 9.
 		}, options );
 
 		return this.each( function() {
@@ -92,6 +94,14 @@
 		if ( '-' === options.operator && false !== otherNumber ) {
 			min = options.min;
 			max = options.allowNegativeResult ? options.max : otherNumber - 1;
+
+			if ( false === options.allowTwoDigitSubtrahend && max >= 10 ) {
+				max = 9;
+			}
+
+			if ( false === options.allowTwoDigitSubtractionResult && otherNumber - min >= 10 ) {
+				min = otherNumber % 10 + 1;
+			}
 
 			if ( false === options.allowZeroResult && otherNumber === max ) {
 				max--;
