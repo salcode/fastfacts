@@ -96,6 +96,10 @@
 			if ( false === options.allowZeroResult && otherNumber === max ) {
 				max--;
 			}
+
+			if ( min > max ) {
+				min = max;
+			}
 		} else {
 			min = options.min;
 			max = options.max;
