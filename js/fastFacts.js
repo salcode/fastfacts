@@ -86,7 +86,11 @@
 	}
 
 	var getNumber = function( options, otherNumber = false ) {
-		return randomNumberFromMinToMaxInclusive( options.min, options.max );
+		var min, max;
+		min = options.min;
+		max = options.max;
+
+		return randomNumberFromMinToMaxInclusive( min, max );
 	}
 
 	var randomNumberFromMinToMaxInclusive = function( min, max ) {
