@@ -2,6 +2,10 @@
  * CSS for jQuery Plugin Fast Facts
  */
 
+body {
+	font-size: 22px;
+}
+
 .subtitle {
 	font-size: 50%;
 	vertical-align: middle;
@@ -10,7 +14,7 @@
 .fast-facts-problem {
 	border-bottom: 1px solid #000;
 	font-size: 110%;
-	margin: 0 auto 40px;
+	margin: 0 auto 70px;
 	max-width: 40px;
 	text-align: right;
 }
@@ -23,5 +27,5 @@
 	border-bottom: 2px solid black;
 	width: 200px;
 	padding-top: 25px;
-	text-indent: -50px;
+	text-indent: -90px;
 }
