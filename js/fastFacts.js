@@ -14,7 +14,7 @@
 			'colClass': 'col-xs-1',
 			'rowClass': 'row',
 			'operator': '+',
-			'numProblems': 100,
+			'numProblems': 60,
 			'allowNegativeResult': false,
 			'allowZeroResult': false,
 			'allowTwoDigitSubtractionResult': false,
