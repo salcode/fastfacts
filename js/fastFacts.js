@@ -90,7 +90,7 @@
 	}
 
 	var getNumber = function( options, otherNumber = false ) {
-		var min, max;
+		var min, max, result;
 		if ( '-' === options.operator && false !== otherNumber ) {
 			min = options.min;
 			max = options.allowNegativeResult ? options.max : otherNumber - 1;
@@ -115,7 +115,8 @@
 			max = options.max;
 		}
 
-		return randomNumberFromMinToMaxInclusive( min, max );
+		result = randomNumberFromMinToMaxInclusive( min, max );
+		return result;
 	}
 
 	var randomNumberFromMinToMaxInclusive = function( min, max ) {
