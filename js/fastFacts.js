@@ -116,6 +116,9 @@
 		}
 
 		result = randomNumberFromMinToMaxInclusive( min, max );
+		if ( '/' === options.operator && false !== otherNumber ) {
+			return otherNumber * result;
+		}
 		return result;
 	}
 
