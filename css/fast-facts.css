@@ -19,6 +19,22 @@
 	float: left;
 }
 
+body.division .fast-facts-problem {
+	border: none;
+	margin: 60px auto 40px;
+}
+body.division .fast-facts-number-1 {
+	border-right: 1px black solid; border-radius: 0px 0px 8px 0px;
+	display: inline;
+	padding-right: 5px;
+}
+body.division .fast-facts-number-2 {
+	border-top: 1px black solid;
+	display: inline;
+	padding-left: 5px;
+}
+body.division .fast-facts-operator { display: none; }
+
 #name {
 	border-bottom: 2px solid black;
 	width: 200px;

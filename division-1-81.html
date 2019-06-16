@@ -5,10 +5,11 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-		<title>Fast Facts</title>
+		<title>Fast Facts Math Division 1-81</title>
 
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/fast-facts.css">
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -17,41 +18,28 @@
 			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
 	</head>
-	<body>
+	<body class="division">
 
 		<div class="container">
-			<h1>Fast Facts</h1>
+			<div id="name" class="pull-right">Name:</div>
 
-			<h2>Worksheets</h2>
+			<h1>Fast Facts <span class="subtitle">Math Division 1-81</span></h1>
 
-			<h3>Addition</h3>
-			<ul>
-				<li><a href="addition-0-10.html">Addition 0-10 Worksheet</a></li>
-				<li><a href="addition-0-18.html">Addition 0-18 Worksheet</a></li>
-				<li><a href="addition-2-18.html">Addition 2-18 Worksheet</a></li>
-			</ul>
-
-			<h3>Subtraction</h3>
-			<ul>
-				<li><a href="subtraction-3-18.html">Subtraction 3-18 Worksheet</a></li>
-			</ul>
-
-			<h3>Multiplication</h3>
-			<ul>
-				<li><a href="multiplication-1-81.html">Multiplication 1-81 Worksheet</a></li>
-			</ul>
-
-			<h3>Division</h3>
-			<ul>
-				<li><a href="division-1-81.html">Division 1-81 Worksheet</a></li>
-			</ul>
-
-			<h2>Open Source Project</h2>
-			<p>
-				This project is open source and hosted on GitHub at <a href="https://github.com/salcode/fastfacts">github.com/salcode/fastfacts</a>
-			</p>
-
+			<div id="math-problems">
+			</div><!-- #math-problems -->
 		</div><!-- .container -->
+
+		<script src="js/jquery.js"></script>
+		<script src="js/fastFacts.js"></script>
+
+		<script>
+			jQuery(document).ready( function($) {
+				$('#math-problems').fastFacts({
+					min: 1,
+					operator: '/'
+				});
+			});
+		</script>
 
 		<!-- Google Analytics -->
 		<script>
